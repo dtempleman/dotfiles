@@ -1,0 +1,110 @@
+{
+    "child": {
+        "child1": {
+            "child1": {
+                "directory": "~",
+                "height": 349,
+                "overrideCommand": "ssh admin-dot",
+                "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                "readOnly": false,
+                "synchronizedInput": true,
+                "title": "${id}: ${title}",
+                "type": "Terminal",
+                "uuid": "a4bfa870-b5dd-48ce-acd4-ee5a54d96f2d",
+                "width": 891
+            },
+            "child2": {
+                "child1": {
+                    "directory": "~",
+                    "height": 349,
+                    "overrideCommand": "ssh admin-foghorn",
+                    "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                    "readOnly": false,
+                    "synchronizedInput": true,
+                    "title": "${id}: ${title}",
+                    "type": "Terminal",
+                    "uuid": "0f40f801-1816-4ea8-afc6-42190dd472c5",
+                    "width": 891
+                },
+                "child2": {
+                    "directory": "~",
+                    "height": 358,
+                    "overrideCommand": "ssh admin-ix",
+                    "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                    "readOnly": false,
+                    "synchronizedInput": true,
+                    "title": "${id}: ${title}",
+                    "type": "Terminal",
+                    "uuid": "f560a532-b3f2-4f9d-b954-836e12e05974",
+                    "width": 891
+                },
+                "orientation": 1,
+                "position": 32,
+                "ratio": 0.492937853107344615,
+                "type": "Paned"
+            },
+            "orientation": 1,
+            "position": 32,
+            "ratio": 0.329867674858223048,
+            "type": "Paned"
+        },
+        "child2": {
+            "child1": {
+                "directory": "~",
+                "height": 349,
+                "overrideCommand": "ssh admin-talos",
+                "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                "readOnly": false,
+                "synchronizedInput": true,
+                "title": "${id}: ${title}",
+                "type": "Terminal",
+                "uuid": "21bebd16-7192-4ffa-a410-a3adcef10997",
+                "width": 891
+            },
+            "child2": {
+                "child1": {
+                    "directory": "~",
+                    "height": 349,
+                    "overrideCommand": "ssh admin-hector",
+                    "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                    "readOnly": false,
+                    "synchronizedInput": true,
+                    "title": "${id}: ${title}",
+                    "type": "Terminal",
+                    "uuid": "d2969c83-ef06-4602-b89c-93e524ef0d9f",
+                    "width": 891
+                },
+                "child2": {
+                    "directory": "~",
+                    "height": 358,
+                    "overrideCommand": "ssh admin-etna",
+                    "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                    "readOnly": false,
+                    "synchronizedInput": true,
+                    "type": "Terminal",
+                    "uuid": "1f587426-921f-4206-887a-6eceed951f45",
+                    "width": 891
+                },
+                "orientation": 1,
+                "position": 32,
+                "ratio": 0.492937853107344615,
+                "type": "Paned"
+            },
+            "orientation": 1,
+            "position": 32,
+            "ratio": 0.329867674858223048,
+            "type": "Paned"
+        },
+        "orientation": 0,
+        "position": 49,
+        "ratio": 0.499719573752103186,
+        "type": "Paned"
+    },
+    "height": 1058,
+    "name": "${title}",
+    "synchronizedInput": true,
+    "type": "Session",
+    "uuid": "b83dcc3d-f6c1-4b76-ab74-c95dfb0492f8",
+    "version": "1.0",
+    "width": 1783
+}

@@ -1,0 +1,7 @@
+[user]
+	name = Daniel
+	email = daniel.templeman@gmail.com
+
+# all repos in the kinsol directory will use the kinsol git user and email
+[includeIf "gitdir:~/kinsol/"]
+	path = ~/.config/git/kinsol.gitconfig

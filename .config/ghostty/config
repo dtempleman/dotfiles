@@ -1,0 +1,6 @@
+theme = catppuccin-mocha.conf
+font-family = Hack Nerd Font Mono
+font-size = 22
+font-thicken = true
+background-opacity = 0.8
+background-blur = 20

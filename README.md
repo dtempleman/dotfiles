@@ -14,8 +14,14 @@ cd dotfiles
 
 Configuration files are managed using [GNU stow](https://www.gnu.org/software/stow/).
 
+ubuntu
 ```shell
 sudo apt update && sudo apt install stow
+```
+
+macos
+```shell
+brew install stow
 ```
 
 ```shell

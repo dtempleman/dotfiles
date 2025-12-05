@@ -5,3 +5,7 @@
 # all repos in the kinsol directory will use the kinsol git user and email
 [includeIf "gitdir:~/kinsol/"]
 	path = ~/.config/git/kinsol.gitconfig
+
+# all repos in the sambanova directory will use the sn git user and email
+[includeIf "gitdir:~/samba/"]
+	path = ~/.config/git/sn.gitconfig

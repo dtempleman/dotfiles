@@ -1,19 +1,36 @@
 # Daniel's configuration files
 
-## GNU stow
+## Install
+
+```shell
+git clone git@github.com:dtempleman/dotfiles.git
+```
+
+```shell
+cd dotfiles
+```
+
+### GNU stow
 
 Configuration files are managed using [GNU stow](https://www.gnu.org/software/stow/).
 
 ```shell
-sudo apt update
-sudo apt install stow
+sudo apt update && sudo apt install stow
+```
+
+```shell
 stow .
 ```
 
-## configs
+## Configurations and Dependencies
 
 - bash
 - zsh
+  - eza
+  - Powerlevel10k
+  - zoxide
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
 - git
 - ssh
 - aerospace

@@ -1,11 +1,12 @@
-[user]
-	name = Daniel
-	email = daniel.templeman@gmail.com
+# machine default identity, set per machine in ~/.gitconfig.local (not in this repo)
+# see .gitconfig.local.example
+[include]
+	path = ~/.gitconfig.local
 
-# all repos in the kinsol directory will use the kinsol git user and email
+# folder overrides; these come after the machine default so they win
+# note: the machine default must NOT add url.insteadOf rewrites for github.com,
+# because git uses the FIRST matching rewrite and these would no longer apply
 [includeIf "gitdir:~/kinsol/"]
-	path = ~/.config/git/kinsol.gitconfig
-
-# all repos in the sambanova directory will use the sn git user and email
-[includeIf "gitdir:~/samba/"]
-	path = ~/.config/git/sn.gitconfig
+	path = ~/.config/git/kinsol-dir.gitconfig
+[includeIf "gitdir:~/kemple/"]
+	path = ~/.config/git/kemple-dir.gitconfig

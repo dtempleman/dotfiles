@@ -1,0 +1,7 @@
+# applied to repos under ~/kinsol/ regardless of the machine default
+[include]
+	path = ~/.config/git/kinsol.gitconfig
+
+# route github ssh remotes through the kinsol key (Host github.com-kinsol in ~/.ssh/config_kinsol)
+[url "git@github.com-kinsol:"]
+	insteadOf = git@github.com:

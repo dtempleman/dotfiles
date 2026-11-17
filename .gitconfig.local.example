@@ -1,0 +1,5 @@
+# copy to ~/.gitconfig.local and keep ONE path uncommented
+# sets the default git identity for repos outside ~/kinsol/ and ~/kemple/
+[include]
+#	path = ~/.config/git/kinsol.gitconfig      # work machine
+	path = ~/.config/git/personal.gitconfig    # personal machine

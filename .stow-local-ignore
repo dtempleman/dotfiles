@@ -1,5 +1,10 @@
-.git
-.gitignore
-README.md
+\.git
+\.gitignore
+README\.md
 
-.*\.(pem|csr)$
+.*\.pem
+.*\.csr
+.*\.example
+
+# per-machine setup script
+init\.sh

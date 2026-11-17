@@ -1,0 +1,7 @@
+# applied to repos under ~/kemple/ regardless of the machine default
+[include]
+	path = ~/.config/git/personal.gitconfig
+
+# route github ssh remotes through the personal key (Host github.com-personal in ~/.ssh/config_daniel)
+[url "git@github.com-personal:"]
+	insteadOf = git@github.com:

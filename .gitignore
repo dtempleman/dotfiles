@@ -1,0 +1,2 @@
+# per-machine config lives outside the repo, but never commit it if copied here
+*.local

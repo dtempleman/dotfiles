@@ -1,0 +1,31 @@
+{
+    "window.zoomLevel": 4,
+    // Editor settings
+    "editor.tabSize": 4,
+    "editor.fontSize": 14,
+    // Workbench settings
+    "workbench.colorTheme": "Palenight (Mild Contrast)",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    "workbench.sideBar.location": "right",
+    // Terminal settings
+    "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.env.linux": {
+        "PYTHONIOENCODING": "utf-8"
+    },
+    "makefile.configureOnOpen": false,
+    "workbench.panel.showLabels": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.activityBar.location": "top",
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "window.commandCenter": false,
+    "workbench.statusBar.visible": false,
+    "python.languageServer": "None",
+    "window.autoDetectColorScheme": false,
+    "chat.titleBar.openInAgentsWindow.enabled": false,
+    "chat.viewSessions.orientation": "stacked",
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.hideOnboarding": true,
+}

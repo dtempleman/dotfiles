@@ -10,6 +10,8 @@ case $- in
     *i*) ;;
       *) return;;
 esac
+# lets ~/.bash_profile know this file has been loaded
+__BASHRC_LOADED=1
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -123,7 +125,7 @@ fi
 
 # -------- Daniel's Custome settings -------- #
 ###############################################
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 export PYTHONPATH=.
 
 export EDITOR="vim"
@@ -139,7 +141,22 @@ export NVM_DIR="$HOME/.nvm"
 # Go settings
 export GOPATH=~/usr/local/go
 export PATH=$PATH:$GOPATH/bin
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+# history: up/down arrows search for commands starting with what's typed
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+
+# eza for ls (ll / la / l above then use it too)
+if command -v eza >/dev/null; then
+    alias ls="eza --icons=always"
+fi
 
 # oh my posh terminal settings
-eval "$(oh-my-posh --init --shell bash --config '~/.config/oh-my-posh/config.json')"
+command -v oh-my-posh >/dev/null && eval "$(oh-my-posh --init --shell bash --config "$HOME/.config/oh-my-posh/config.json")"
+
+# zoxide for better 'cd' (keep last: it hooks the prompt, after oh-my-posh)
+if command -v zoxide >/dev/null; then
+    eval "$(zoxide init bash)"
+    alias cd="z"
+fi

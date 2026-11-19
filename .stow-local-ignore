@@ -8,3 +8,6 @@ README\.md
 
 # per-machine setup script
 init\.sh
+
+# VS Code extension list (read by denv, not linked into ~)
+vscode-extensions\.txt

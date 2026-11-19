@@ -14,19 +14,20 @@ cd dotfiles
 
 Configuration files are managed using [GNU stow](https://www.gnu.org/software/stow/).
 
-ubuntu
+#### install stow
 ```shell
 sudo apt update && sudo apt install stow
 ```
 
-macos
+#### run stow
 ```shell
-brew install stow
+mkdir -p -m 700 ~/.ssh
+stow --no-folding -t ~ .
 ```
 
-```shell
-stow .
-```
+- `-t ~` links into your home directory. Without it, stow links into the repo's parent directory, which is only `~` if you cloned into `~`.
+- `--no-folding` links individual files, never whole directories. Without it, stow makes a directory that doesn't exist yet (such as `~/.ssh` or `~/.config/tmux`) a single symlink into this repo, and anything written there later (SSH keys, app state) ends up inside the repo.
+- Real files already in the way (such as a fresh machine's `~/.bashrc`) make stow refuse. Move them aside first, e.g. `mv ~/.bashrc ~/.bashrc.bak`.
 
 ### Per-machine defaults (git identity and GitHub key)
 
@@ -37,7 +38,7 @@ Each machine picks its default git identity and GitHub SSH key in two local file
 ./init.sh personal    # personal machine
 ```
 
-Existing local files are kept; use `./init.sh -f <profile>` to regenerate them. `init.sh` creates the symlinks itself, so it can run before or after `stow .`.
+Existing local files are kept; use `./init.sh -f <profile>` to regenerate them. `init.sh` creates the symlinks itself, so it can run before or after stow.
 
 Folder rules override the machine default on every machine:
 
@@ -51,16 +52,14 @@ Check a repo with `git config user.email` and `git ls-remote --get-url origin`.
 
 ## Configurations and Dependencies
 
-- bash
-- zsh
+- bash (login shell)
   - eza
-  - Powerlevel10k
+  - oh-my-posh
   - zoxide
-  - zsh-autosuggestions
-  - zsh-syntax-highlighting
 - git
 - ssh
-- aerospace
-- ghostty
-- oh-my-posh
+- tmux
 - tilix
+- VS Code
+  - settings: `.config/Code/User/settings.json`
+  - extensions: `vscode-extensions.txt` (not linked; denv's bootstrap installs them)
